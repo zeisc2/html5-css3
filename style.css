@@ -1,0 +1,393 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: #f0f2f5;
+  border-bottom: 0.3px solid #00bcd4;
+}
+
+.container {
+  max-width: 1300px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo .bis {
+  font-size: 2em;
+  color: #000;
+}
+
+.logo .lite {
+  color: #00bcd4;
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+nav ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f2f5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 200px;
+  height: 300;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+nav ul li .dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f0f2f5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 200px;
+  height: 225px;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+
+nav ul li .dropdown-content a,
+nav ul li .dropdown-content1 a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li .dropdown-content a:hover,
+nav ul li .dropdown-content1 a:hover {
+  background-color: #ddd;
+}
+nav ul li:hover .dropdown-content,
+nav ul li:hover .dropdown-content1 {
+  display: block;
+}
+.dropdown-content,
+.dropdown-content1 {
+  font-size: 12px;
+  font-weight: lighter;
+}
+div.col {
+  padding: 30px;
+  background-color: #e8ebf1;
+}
+div .col-sm-3 p {
+  font-size: 13px;
+}
+div.mouse {
+  border-bottom: 2px solid rgb(161, 161, 237);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  height: 50px;
+  align-items: center;
+}
+div.mouse p {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 1 1 calc(25% - 10px);
+  display: flex;
+  max-width: 200px;
+  max-height: 200px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  aspect-ratio: 1;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+}
+
+.gallery-item img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-color: rgba(0, 180, 225, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon,
+.show-info {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.icon,
+.show-info:hover {
+  font-size: 20px;
+  transform: matrix(3);
+}
+.icons a {
+  text-decoration: none;
+}
+.icons a:hover {
+  text-decoration: none;
+}
+h6 img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.download button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download button:hover {
+  background-color: #0056b3;
+}
+
+.download p.download {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+.download button img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.download {
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 750px;
+  border: 1px solid #0056b3;
+  background-color: #e8fcfe;
+}
+
+.footer {
+  background-color: #e8ebf1;
+  padding-top: 20px;
+  height: 400px auto;
+  width: auto;
+}
+footer .container {
+  margin-top: 80px;
+}
+.footer h5 {
+  font-weight: bold;
+}
+.footer p,
+.footer a {
+  color: black;
+}
+
+.footer .bottom-text {
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* contacts  */
+div.send-email,
+form {
+  font-size: 14px;
+  margin-left: 340px;
+  box-sizing: border-box;
+}
+input {
+  width: 550px;
+  height: 40px;
+}
+textarea {
+  width: 400px;
+  height: 150px;
+}
+button {
+  background-color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+button:hover {
+  color: red;
+  background-color: whitesmoke;
+}
+#map {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 250px;
+  width: 1050px;
+  box-sizing: border-box;
+  margin-left: 200px;
+}
+div.address {
+  text-align: center;
+}
+
+/* .portfolio  */
+.portfolio {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2em;
+}
+
+.portfolio-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.portfolio-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.portfolio-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.portfolio-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-item {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.menu-item.active,
+.menu-item:hover {
+  background-color: #a7e4e5;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item:focus {
+  outline: none;
+}
+.next {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.next-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.next-menu a {
+  text-decoration: none;
+}
+.next-menu a:hover {
+  text-decoration: none;
+}
+
+.next-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.next-item:hover {
+  background-color: #a7e4e5;
+  color: #fff;
+}
+
+.next-item:active {
+  background-color: #00bcd4;
+  color: #fff;
+}
+p.product-name {
+  font-size: 16px;
+  padding: 1px;
+}
+p.product-info {
+  color: blue;
+  font-size: 14px;
+}
