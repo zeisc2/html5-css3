@@ -1,3 +1,5 @@
+// SHOW INFO PRODUCT    
+
 document.addEventListener("DOMContentLoaded", function() {
     const eyeIcons = document.querySelectorAll('.show-info');
 
@@ -24,4 +26,22 @@ window.addEventListener('beforeunload', function() {
     infoBoxes.forEach(infoBox => {
         infoBox.style.display = 'none';
     });
+});
+
+// CHECK CAPS LOCK IS ON
+const inputField = document.getElementById('email');
+const capsLockWarning = document.querySelector('.capslock');
+
+inputField.addEventListener('keydown', (event) => {
+    if (event.getModifierState('CapsLock')) {
+        capsLockWarning.hidden = false;
+    } else {
+        capsLockWarning.hidden = true;
+    }
+});
+
+inputField.addEventListener('keyup', (event) => {
+    if (!event.getModifierState('CapsLock')) {
+        capsLockWarning.hidden = true;
+    }
 });
