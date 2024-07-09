@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Manager</title>
+ <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+<button><a href="index.html">Back</a></button>
+<table id="userTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="userList"></tbody>
+</table>
+
+<form id="addUserForm">
+    <input type="hidden" id="editIndex" value="">
+    <input type="text" id="name" placeholder="Name" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <button type="submit">Submit</button>
+</form>
+
+<script src="usermanager.js"></script>
+</body>
+</html>

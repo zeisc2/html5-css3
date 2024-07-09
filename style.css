@@ -1,7 +1,110 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+:root {
+  --main-color: #00bcd4;  
 }
+body {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+}
+
+/* Basic styling for the header */
+header {
+  background-color: #f2f2f2;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bis {
+  font-weight: 900;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content,
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px;
+}
+
+.dropdown-content a,
+.dropdown-content1 a {
+  padding: 12px 16px;
+  display: block;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content1 {
+  display: block;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.show-menu ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+
+  nav.show-menu li {
+    margin: 10px 0;
+  }
+}
+
 header {
   background-color: #f0f2f5;
   border-bottom: 0.3px solid #00bcd4;
@@ -203,6 +306,7 @@ h6 img {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transform: scale(1.2);
   transition: background-color 0.3s ease;
 }
 
@@ -252,7 +356,28 @@ footer .container {
   text-align: center;
   margin-top: 20px;
 }
+.btnsubmit {
+ 
+    background-color: #4CAF50;
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 13px; 
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s;
+}
 
+button:hover {
+    background-color: white;  
+    color: black;  
+    border: 2px solid #4CAF50;  
+}
+ 
 /* contacts  */
 div.send-email,
 form {
@@ -391,3 +516,10 @@ p.product-info {
   color: blue;
   font-size: 14px;
 }
+.svg {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+  padding: 20px 20px;
+}
+ 

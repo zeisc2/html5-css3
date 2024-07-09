@@ -21,18 +21,60 @@
         src="https://kit.fontawesome.com/4dd88e3847.js"
         crossorigin="anonymous"
       ></script>
+      <style>
+         .draggable {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+
+        .dropzone {
+            width: 130px;
+            height: 130px;
+            margin: 20px;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dropzone.hover {
+            border-color: #000;
+        }
+        .ring {
+          margin-left: 350px;
+          width: 50px;
+          height: 50px;
+          border-radius:100rem;
+          border: 1px solid black;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          animation: animation 1s linear infinite;
+        }
+
+        
+        @keyframes animation{
+          to{
+            transform: rotate(360deg);
+          }
+        }
+      </style>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="logo">
-          <a style="text-decoration: none" href="/html/index.html"
+          <a style="text-decoration: none" href="index.html"
             ><span class="bis">TB</span><span class="lite">Chuong</span></a
           >
         </div>
         <nav>
           <ul>
-            <li><a href="/html/index.html">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="#">ABOUT US</a></li>
             <li class="dropdown">
               <a href="#">SERVICES <i class="fa-solid fa-chevron-down"></i></a>
@@ -45,7 +87,7 @@
               </div>
             </li>
             <li class="dropdown">
-              <a href="/html/portfolio.html">PORTFOLIO <i class="fa-solid fa-chevron-down"></i></a>
+              <a href="portfolio.html">PORTFOLIO <i class="fa-solid fa-chevron-down"></i></a>
               <div class="dropdown-content">
                 <a href="#">Websites</a>
                 <a href="#">Wordpress</a>
@@ -58,8 +100,8 @@
             </li>
             <li><a href="blog.html">BLOG</a></li>
 
-            <li><a href="/html/contact.html">CONTACT US</a></li>
-            <li><a href="/hmtl/register.html">ACCOUNT</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="register.html">ACCOUNT</a></li>
           </ul>
         </nav>
       </div>
@@ -87,6 +129,10 @@
         </p>
       </div>
       <br>
+
+      <div class="ring">
+
+      </div>
       <form action="">
          
             <label for="fname"><strong>Name:</strong></label><br>
@@ -109,10 +155,14 @@
             <label for"Phone" required><strong>Description:</strong></label><br>
             <textarea required></textarea> <br> 
 
-           
-            <button type="submit"> <img width="30px"; height="30px" src="img/imgSubmit.png" alt="img" />Subbmit</button>
+            <img src="https://i2.wp.com/lucloi.vn/wp-content/uploads/2019/11/3a6.gif?fit=561%2C316&ssl=1" alt="Draggable Image" class="draggable" draggable="true" id="drag1">
+        
+            <div class="dropzone" id="dropzone">Drop here</div>
+
+            <button class="btnsubmit" type="submit">Subbmit</button>
           
       </form>  <br>
+      <!-- maps -->
       <h2 style="text-align: center;">
         We are here
     </h2>
@@ -120,22 +170,27 @@
     </div>
 
     <script>
-        function initMap() {
-            var mapOptions = {
-                center: new google.maps.LatLng(37.7749, -122.4194), 
-                zoom: 10
-            };
-            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-        }
-    </script>
+      function initMap() {
+          var mapOptions = {
+              center: new google.maps.LatLng(12.7471, 108.3631),
+              zoom: 10
+          };
+          var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+          var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(12.7471, 108.3631),  
+              title: 'Buon Me Thuot',
+              map: map
+          });
+      }
+  </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI9kPkskayYti5ttrZL_UfBlL3OkMEbvs&callback=initMap" async defer></script>
     <div class="address">
         <br>
         <h3>OFFICE ADDRESS</h3>
         <p>
-            <strong>BisLite Inc.</strong><br>
-            Always Street 265<br>
-            Fransico - San Fransico<br><br>
+            <strong>Buon Me Thuot</strong><br>
+            Buon Me Thuot City<br>
             <strong>Phone</strong>: 987-6543-210<br>
             <strong>Fax</strong>: 987-6543-210<br>
         </p>
@@ -143,6 +198,7 @@
 </main>
 <br>
 
+ 
     <!-- footer -->
     <footer class="footer">
       <div class="container">
@@ -241,5 +297,7 @@
       </div>
     </footer>
     <script src="scrip.js"></script>
+    <script src="drop.js"></script>
+   
   </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Manager</title> 
+<link rel="stylesheet" href="crud.css">
+</head>
+<body>
+<button><a href="index.html">Back</a></button>
+<table id="productTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="productList"></tbody>
+</table>
+
+<form id="addProductForm">
+    <input type="hidden" id="editIndex" value="">
+    <input type="text" id="productName" placeholder="Product Name" required><br>
+    <input type="number" id="productPrice" placeholder="Product Price" required><br>
+    <textarea id="productDescription" placeholder="Product Description" required></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+
+<script src="productmanganer.js"></script>
+</body>
+</html>

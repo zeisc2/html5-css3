@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BaoChuong</title>
@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Trirong"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -25,185 +25,295 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      h4 {
-  margin-bottom: 10px;
-  color: #0056b3;
-  text-align: center;
-}
-h2 {
-  color: orange;
-  
-}
-audio, iframe {
-  display: block;
-  width: 100%;
-  max-width: 560px;
-  margin: 20px 0;
-  margin-left: 120px;
-}
-iframe {
-  border: none;
-}
+            main {
+                padding: 20px;
+            }
+
+            .linear-gradient {
+                background: linear-gradient(to right, #3498db
+                , #e7b792);
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+
+            .linear-gradient h4 {
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            .linear-gradient p {
+                color: #fff;
+                margin-bottom: 10px; /
+            }
+
+            iframe {
+                width: 100%;
+                height: 400px;
+                margin-bottom: 20px;
+            }
+
+            .audio-section {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .audio-section h4 {
+                color: #333;
+                margin-bottom: 10px;
+            }
  
+            .audio-section {
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      canvas{
+        font-size: 30px;
+      }
+      .audio-section h4 {
+          color: #333;
+          margin-bottom: 10px;
+      }
+
+      .audio-section audio {
+          width: 100%;
+          display: block;
+          margin-top: 10px;
+      }
+      .decorative-svg {
+            width: 72px;
+            height: 72px;
+            color: blue;  
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .decorative-svg {
+            margin-bottom: 20px;
+        }
+        
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-          <div class="logo">
-            <a style="text-decoration: none" href="index.html"
-              ><span class="bis">TB</span><span class="lite">Chuong</span></a
-            >
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li class="dropdown">
-                <a href="#">SERVICES <i class="fa-solid fa-chevron-down"></i> </a>
-                <div class="dropdown-content1">
-                  <a href="#">Web design</a>
-                  <a href="#">Wordpress Design</a>
-                  <a href="#">Mobile App Development</a>
-                  <a href="#">Internet Marketing</a>
-                  <a href="#">Social Media Management</a>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a href="portfolio.html"
-                  >PORTFOLIO <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <div class="dropdown-content">
-                  <a href="#">Websites</a>
-                  <a href="#">Wordpress</a>
-                  <a href="#">Mobile Apps</a>
-                  <a href="#">Icons</a>
-                  <a href="#">Logos</a>
-                  <a href="#">Graphics</a>
-                  <a href="#">Social Media Management</a>
-                </div>
-              </li>
-              <li><a href="blog.html">BLOG</a></li>
-              <li><a href="contact.html">CONTACT US</a></li>
-              <li><a href="register.html">ACCOUNT</a></li>
-            </ul>
-          </nav>
+      <div class="container">
+        <div class="logo">
+          <a style="text-decoration: none" href="index.html"
+            ><span class="bis">TB</span><span class="lite">Chuong</span></a
+          >
         </div>
-      </header>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li class="dropdown">
+              <a href="#">SERVICES <i class="fa-solid fa-chevron-down"></i> </a>
+              <div class="dropdown-content1">
+                <a href="#">Web design</a>
+                <a href="#">Wordpress Design</a>
+                <a href="#">Mobile App Development</a>
+                <a href="#">Internet Marketing</a>
+                <a href="#">Social Media Management</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="portfolio.html"
+                >PORTFOLIO <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">Websites</a>
+                <a href="#">Wordpress</a>
+                <a href="#">Mobile Apps</a>
+                <a href="#">Icons</a>
+                <a href="#">Logos</a>
+                <a href="#">Graphics</a>
+                <a href="#">Social Media Management</a>
+              </div>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="register.html">ACCOUNT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="linear-gradient">
+        <h2>Welcome to BaoChuong</h2>
+        <p>
+          At BaoChuong, Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Perferendis soluta incidunt, amet saepe vitae cumque dolorem iusto obcaecati labore,
+           quo quas sit nesciunt explicabo doloribus veritatis? Asperiores eum voluptates 
+           necessitatibus?
+        </p>
+        <p>
+          Whether you're a small startup or a large corporation, we have the
+          solutions to meet your needs. With our innovative approach and
+          attention to detail, we ensure that your online presence is not just
+          functional but also visually stunning.
+        </p>
+        <p>
+          Now, take a moment to watch the video below to learn more about our
+          services and how we can help your business succeed.
+        </p>
+      </div>
 
-      <!-- main  -->
-      <main>
-        <h2>Hello, Have a nice day.</h2>
+      <!-- Video -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/lzU5qCUGhtQ?si=V_ZYAKTjBtqTU84_"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
 
-        <h4>Listen to music with me... :)</h4>
+      <!-- Audio -->
+      <div class="audio-section">
+        
+        <h4>Listen to Our Latest Podcast</h4>
+        <!-- SVG -->
+     <div class="center">
+      <svg class="decorative-svg" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="red"/>
+        <p>
+          lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidun
+          t.consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt.consectetur adipiscing elit.
+           Morbi euismod placerat dui et tincidunt.consectetur adipiscing elit. Morbi euismod placerat dui e
+           t tincidunt.consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt.
+        </p>
+    </svg>
+     </div>
+
+<!--  canvas -->
+<div class="center">
+  <canvas class="myCanvas" id="myCanvas" width="100" height="100"></canvas>
+  <div class="text-container">
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt.
+          Consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Consectetur adipiscing elit.
+          Morbi euismod placerat dui et tincidunt. Consectetur adipiscing elit. Morbi euismod placerat dui et
+          tincidunt. Consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt.
+      </p>
+  </div>
+</div>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var ctx = canvas.getContext('2d');
+
+  ctx.beginPath();
+        ctx.arc(20, 20, 15, 0, 2 * Math.PI); 
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.stroke();
+</script>
         <audio controls>
-          <source src="audio/Keane_-_Somewhere_Only_We_Know_CeeNaija.com_.mp3" type="audio/mpeg">
-      </audio>
+          <source src="audio/audio.m4a" type="audio/mpeg" />
+        </audio>
+      </div>
 
-      <h4>Wacth video with meee... :)</h4>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ktHB3rZ50no?si=SOLdn5Mwi5nLxI7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
-      </body>
-      </main>
-
-
-
-      <!-- footer  -->
-
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <h5>ABOUT US</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                euismod placerat dui et tincidunt. Sed sollicitudin posuere
-                auctor. Phasellus at ultricies nisl. Integer at leo eros. Ut nec
-                lorem id orci convallis porta. Donec pharetra neque eu velit
-                dictum molestie.
-              </p>
-            </div>
-            <div class="col-md-2">
-              <h5>EXPLORE</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h5>BROWSE</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Press & Media</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms Of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h5>CONTACT US</h5>
-              <p>BisLite Inc.<br />Always Street 265<br />0X - 125 - Canada</p>
-              <p>Phone: 987-6543-210<br />Fax: 987-6543-210</p>
-            </div>
-            <div class="col-md-2">
-              <h5>CONNECT WITH US</h5>
-              <div class="social-icons">
-                <a href="#"
-                  ><img
-                    width="25%"
-                    ;
-                    height="25%"
-                    src="img/imageFacebook.png"
-                    alt="Facebook"
-                  />
-                  Facebook</a
-                ><br /><br />
-                <a href="#"
-                  ><img
-                    width="25%"
-                    ;
-                    height="25%"
-                    src="img/imgLinkedin.avif"
-                    alt="LinkedIn"
-                  />
-                  LinkedIn</a
-                ><br /><br />
-                <a href="#"
-                  ><img
-                    width="25%"
-                    ;
-                    height="25%"
-                    src="img/imgPinterest.jpg"
-                    alt="Pinterest"
-                  />
-                  Pinterest</a
-                ><br /><br />
-              </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>ABOUT US</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              euismod placerat dui et tincidunt. Sed sollicitudin posuere
+              auctor. Phasellus at ultricies nisl. Integer at leo eros. Ut nec
+              lorem id orci convallis porta. Donec pharetra neque eu velit
+              dictum molestie.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h5>EXPLORE</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>BROWSE</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press & Media</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms Of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>CONTACT US</h5>
+            <p>BisLite Inc.<br />Always Street 265<br />0X - 125 - Canada</p>
+            <p>Phone: 987-6543-210<br />Fax: 987-6543-210</p>
+          </div>
+          <div class="col-md-2">
+            <h5>CONNECT WITH US</h5>
+            <div class="social-icons">
+              <a href="#"
+                ><img
+                  width="25%"
+                  ;
+                  height="25%"
+                  src="img/imageFacebook.png"
+                  alt="Facebook"
+                />
+                Facebook</a
+              ><br /><br />
+              <a href="#"
+                ><img
+                  width="25%"
+                  ;
+                  height="25%"
+                  src="img/imgLinkedin.avif"
+                  alt="LinkedIn"
+                />
+                LinkedIn</a
+              ><br /><br />
+              <a href="#"
+                ><img
+                  width="25%"
+                  ;
+                  height="25%"
+                  src="img/imgPinterest.jpg"
+                  alt="Pinterest"
+                />
+                Pinterest</a
+              ><br /><br />
             </div>
           </div>
         </div>
-  
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-center">
-              <div class="bottom-text">
-                © Copyright 2012 - BisLite Inc. All rights reserved. Some free
-                icons used here are created by Brankic1979.com.<br />
-                Client Logos are copyright and trademark of the respective owners
-                / companies.
-              </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <div class="bottom-text">
+              © Copyright 2012 - BisLite Inc. All rights reserved. Some free
+              icons used here are created by Brankic1979.com.<br />
+              Client Logos are copyright and trademark of the respective owners
+              / companies.
             </div>
-            <div class="col-md-6 text-center">
-              <div class="logo">
-                <a style="text-decoration: none" href="index.html">
-                  <span class="bis">TB</span><span class="lite">Chuong</span>
-                </a>
-              </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="logo">
+              <a style="text-decoration: none" href="index.html">
+                <span class="bis">TB</span><span class="lite">Chuong</span>
+              </a>
             </div>
           </div>
         </div>
-      </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
